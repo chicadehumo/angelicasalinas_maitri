@@ -4,7 +4,6 @@ body {
 	color: $global-color;
 }
 
-
 //Background colors
 .bg-dark { background-color: $global-background!important;}
 .background-transparent-primary {
@@ -27,7 +26,7 @@ body {
     background-color: darken($secondary-color, 10%);
     color: white;
     border-color: darken($secondary-color, 10%);
-}
+	}
 }
 .btn-secondary  {
     background-color: map-get($color,'uno');
@@ -37,7 +36,7 @@ body {
     background-color: darken(map-get($color,'uno'), 10%);
     color: white;
     border-color: darken(map-get($color,'uno'), 10%);
-}
+	}
 }
 //Colors
 

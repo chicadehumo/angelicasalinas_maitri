@@ -6,19 +6,17 @@
 }
 
 //Fonts
-@mixin fontFormat($size,$lineHeight,$color,$transform,$weight) {
+@mixin fontFormat($size:inherit,$lineHeight:inherit,$color:inherit,$transform:none,$weight:normal) {
     font-size: $size;
     line-height: $lineHeight;
     color: $color;
     @if $transform {
         text-transform: $transform;
-    } @else {
-        text-transform: inherit;
     }
     @if $weight {
         font-weight: $weight;
     } @else {
-        font-weight: inherit;
+        font-weight: normal;
     }
 }
 
