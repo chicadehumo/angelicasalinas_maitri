@@ -7811,7 +7811,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 :root {
-  --bs-primary-rgb: #3B6EA7; }
+  --bs-primary-rgb: $third-color; }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -7822,6 +7822,14 @@ body {
 
 .background-transparent-primary {
   background-color: rgba(1, 38, 57, 0.85);
+  color: white; }
+
+.background-transparent-secondary {
+  background-color: rgba(238, 128, 128, 0.85);
+  color: white; }
+
+.background-transparent-third {
+  background-color: rgba(59, 110, 167, 0.85);
   color: white; }
 
 .btn {
@@ -7848,6 +7856,10 @@ body {
     color: white;
     border-color: #61bbb8; }
 
+.card {
+  border: none;
+  border-radius: 0; }
+
 .text-primary {
   color: #3B6EA7 !important; }
 
@@ -7869,7 +7881,45 @@ body {
   .main-nav .icon {
     display: block;
     padding: 5px 0 5px 5px;
-    width: 35px; }
+    width: 35px;
+    margin: auto; }
+  .main-nav .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    background-color: #000507; }
+  .main-nav .dropdown-item {
+    font-size: 1.1rem;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: "";
+    padding-block: 20px;
+    margin-bottom: 12px; }
+  .store .main-nav .dropdown-menu {
+    background-color: #2e5581; }
+  .workshop .main-nav .dropdown-menu {
+    background-color: #e85353; }
+  @media (min-width: 576px) {
+    .main-nav .dropdown-menu {
+      text-align: left;
+      background-color: #012639; }
+    .store .main-nav .dropdown-menu {
+      background-color: #3B6EA7; }
+    .workshop .main-nav .dropdown-menu {
+      background-color: #EE8080; }
+    .main-nav .dropdown-item {
+      font-size: 0.825rem;
+      line-height: 1;
+      color: white;
+      text-transform: uppercase;
+      font-weight: ""; }
+      .main-nav .dropdown-item:hover {
+        background-color: #000507; }
+      .store .main-nav .dropdown-item:hover {
+        background-color: #2e5581; }
+      .workshop .main-nav .dropdown-item:hover {
+        background-color: #e85353; } }
 
 .prime {
   background-position: center center;
@@ -7893,11 +7943,11 @@ body {
   background-image: url(../images/home-mobile.jpg); }
 
 .prime .box-pad {
-  padding: 180px 0 100px; }
+  padding: 160px 0 100px; }
 
 .prime h1, .prime .h1 {
-  font-size: calc(3rem + 1.1vw);
-  line-height: 1.1;
+  font-size: calc(3.5rem + 1.1vw);
+  line-height: 1;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -7916,8 +7966,9 @@ body {
 
 @media (max-width: 576px) {
   .prime h1, .prime .h1 {
-    font-size: calc(2.4em + 0.9vw);
-    max-width: 300px; } }
+    max-width: 300px; }
+  .tribu .prime h1, .tribu .prime .h1, .news .prime h1, .news .prime .h1 {
+    font-size: calc(2.4em + 0.9vw); } }
 
 @media (min-width: 576px) {
   .home .prime {
@@ -8030,3 +8081,20 @@ body {
   width: 18px;
   height: 18px;
   margin-right: 10px; }
+
+section.noticias {
+  padding-top: 96px; }
+
+.navbar-nav .nav-item {
+  text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+    padding: 10px;
+    margin-block: 5px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: white;
+    text-transform: "";
+    font-weight: ""; } }

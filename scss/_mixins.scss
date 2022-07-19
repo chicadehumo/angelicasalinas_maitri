@@ -6,7 +6,7 @@
 }
 
 //Fonts
-@mixin fontFormat($size:inherit,$lineHeight:inherit,$color:inherit,$transform:none,$weight:normal) {
+@mixin fontFormat($size,$lineHeight,$color,$transform,$weight) {
     font-size: $size;
     line-height: $lineHeight;
     color: $color;
