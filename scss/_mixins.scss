@@ -12,13 +12,11 @@
     color: $color;
     @if $transform {
         text-transform: $transform;
-    } @else {
-        text-transform: inherit;
     }
     @if $weight {
         font-weight: $weight;
     } @else {
-        font-weight: inherit;
+        font-weight: normal;
     }
 }
 

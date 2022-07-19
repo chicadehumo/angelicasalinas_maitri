@@ -27,10 +27,11 @@ $breakpoint-xxl: 1400px;
 $global-color: #27343B;
 $primary-color: $global-background;
 $secondary-color: #F2916D;
+$third-color: #3B6EA7;
 
 $color:(
     'uno': #85CAC8,
-    'dos': #3B6EA7,
+    'dos': $third-color,
     'tres':#78AFAD,
     'cuatro':#155259,
     'cinco': #008CA4
@@ -42,13 +43,13 @@ $colorSection:(
 );
 
 :root {
-    --bs-primary-rgb: #3B6EA7;
+    --bs-primary-rgb: $third-color;
 }
 
 
 // Heading
 $heading: (
-    'h1': calc(3rem + 1.1vw),
+    'h1': calc(3.5rem + 1.1vw),
     'h2': calc(2rem + .9vw)
 );
 
