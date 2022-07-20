@@ -110,6 +110,7 @@ body {
 //Prime
 .prime {
 	& { 
+		background-color: $global-background;
 		@include bg-image(center,center,no-repeat,cover);
 		background-attachment: fixed; 
 	}
