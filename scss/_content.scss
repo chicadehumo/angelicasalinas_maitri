@@ -56,7 +56,51 @@ body {
 //Text
 .text-primary { color: map-get($color, 'dos') !important; }
 
-// SITE
+// !--- SITE ----
+
+//Footer
+.footer {
+	& {
+		background-color: $global-background;
+		color: white;
+		padding-block: 60px;
+	}
+	& h3 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	& .social, & .contact {
+		list-style: none;
+	}
+	& .social li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+	& .social img {
+		width: 25px;
+		height: 25px;
+	}
+	& .contact {
+		margin-top: 20px;
+		font-size: 1rem;
+	}
+	& .contact li {
+		margin-bottom: 15px;
+	}
+	& .contact img {
+		width: 18px;
+		height: 18px;
+		margin-right: 10px;
+	}
+	@media (min-width: $breakpoint-s) {
+		
+	}
+}
 
 // Nav - MAIN NAV
 .main-nav {
@@ -125,6 +169,10 @@ body {
 	}
 	& h1 {
 		@include fontFormat(map-get($heading, h1),1,white,uppercase,bold);
+		display: block;
+	}
+	& h3 {
+		@include fontFormat(map-get($heading, h3),1,white,uppercase,bold);
 		display: block;
 	}
 	& .slogan { 
@@ -205,48 +253,11 @@ body {
 		}
 	}
 }
-
-//Footer
-.footer {
-	& {
-		background-color: $global-background;
-		color: white;
-		padding-block: 60px;
-	}
-	& h3 {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 2rem;
-	}
-	& .social, & .contact {
-		list-style: none;
-	}
-	& .social li {
-		display: inline-block;
-		margin-right: 10px;
-	}
-	& a {
-		color: white;
-		text-decoration: none;
-	}
-	& .social img {
-		width: 25px;
-		height: 25px;
-	}
-	& .contact {
-		margin-top: 20px;
-		font-size: 1rem;
-	}
-	& .contact li {
-		margin-bottom: 15px;
-	}
-	& .contact img {
-		width: 18px;
-		height: 18px;
-		margin-right: 10px;
-	}
-	@media (min-width: $breakpoint-s) {
-		
+.tallerDes {
+	& .fa-solid {
+		font-size: 1.75rem;
+		color: map-get($color,'tres');
+		margin-right: 5px;
 	}
 }
 
@@ -254,6 +265,23 @@ body {
 section {
 	&.noticias {
 		padding-top: 96px;
+	}
+	&.data {
+		padding-block: 60px;
+	}
+	&.data h2 {
+		@include fontFormat(map-get($heading, h2),1,$global-color,uppercase,'600');
+	}
+	&.data h2 small {
+		color: $secondary-color;
+	}
+	@media (min-width: $breakpoint-m) {
+		.workshop &.prime .box-pad { padding-bottom: 160px; }
+		&.formTaller .box-pad{ margin-top: -100px; margin-bottom: 100px; }
+		&.formTaller .box-pad > div { border-radius: 40px; }
+		&.data {
+			padding-block: 90px;
+		}
 	}
 }
 
