@@ -7863,6 +7863,43 @@ body {
 .text-primary {
   color: #3B6EA7 !important; }
 
+.footer {
+  background-color: #012639;
+  color: white;
+  padding-block: 60px; }
+
+.footer h3, .footer .h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem; }
+
+.footer .social, .footer .contact {
+  list-style: none; }
+
+.footer .social li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.footer a {
+  color: white;
+  text-decoration: none; }
+
+.footer .social img {
+  width: 25px;
+  height: 25px; }
+
+.footer .contact {
+  margin-top: 20px;
+  font-size: 1rem; }
+
+.footer .contact li {
+  margin-bottom: 15px; }
+
+.footer .contact img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; }
+
 .main-nav {
   background-color: rgba(1, 38, 57, 0.85); }
   .store .main-nav {
@@ -7948,6 +7985,14 @@ body {
 
 .prime h1, .prime .h1 {
   font-size: calc(3.5rem + 1.1vw);
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block; }
+
+.prime h3, .prime .h3 {
+  font-size: calc(2rem + .5vw);
   line-height: 1;
   color: white;
   text-transform: uppercase;
@@ -8046,45 +8091,37 @@ body {
     opacity: 1;
     transition: all ease-in-out .5s; } }
 
-.footer {
-  background-color: #012639;
-  color: white;
-  padding-block: 60px; }
-
-.footer h3, .footer .h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2rem; }
-
-.footer .social, .footer .contact {
-  list-style: none; }
-
-.footer .social li {
-  display: inline-block;
-  margin-right: 10px; }
-
-.footer a {
-  color: white;
-  text-decoration: none; }
-
-.footer .social img {
-  width: 25px;
-  height: 25px; }
-
-.footer .contact {
-  margin-top: 20px;
-  font-size: 1rem; }
-
-.footer .contact li {
-  margin-bottom: 15px; }
-
-.footer .contact img {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px; }
+.tallerDes .fa-solid {
+  font-size: 1.75rem;
+  color: #78AFAD;
+  margin-right: 5px; }
 
 section.noticias {
   padding-top: 96px; }
+
+section.data {
+  padding-block: 60px; }
+
+section.data h2, section.data .h2 {
+  font-size: calc(2rem + .9vw);
+  line-height: 1;
+  color: #27343B;
+  text-transform: uppercase;
+  font-weight: "600"; }
+
+section.data h2 small, section.data .h2 small, section.data h2 .small, section.data .h2 .small {
+  color: #F2916D; }
+
+@media (min-width: 768px) {
+  .workshop section.prime .box-pad {
+    padding-bottom: 160px; }
+  section.formTaller .box-pad {
+    margin-top: -100px;
+    margin-bottom: 100px; }
+  section.formTaller .box-pad > div {
+    border-radius: 40px; }
+  section.data {
+    padding-block: 90px; } }
 
 .navbar-nav .nav-item {
   text-transform: uppercase; }
