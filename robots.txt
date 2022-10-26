@@ -6,4 +6,4 @@ Disallow: /images/svg
 User-Agent: Googlebot
 Disallow: /archivonoseguir.php
 
-Sitemap: https://maitrisoul.000webhostapp.com/sitemap.xml
+Sitemap: https://maitrisoul.com/sitemap.xml
